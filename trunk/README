@@ -1,0 +1,131 @@
+NAME
+    cuckoo - Cuckoo Hash library
+
+DESCRIPTION
+    This module provides a simple interface to the Cuckoo Hash,
+    an efficient sparse array implementation.
+    
+    Cuckoo Hashing was proposed by Pagh and Rodler (2001). The idea is to
+    build a dictionary data structure with two hash tables and two different
+    hash functions.
+    
+    SEE ALSO
+    Rasmus Pagh and Flemming Friche Rodler. 2001. Cuckoo Hashing, Proceedings
+    of ESA 2001, Lecture Notes in Computer Science, vol. 2161.
+    
+    Chuleerat Jaruskulchai and Canasai Kruengkrai. 2002. Building Inverted
+    Files Through Efficient Dynamic Hashing. Proceedings of the Fifth National
+    Computer Science and Engineering Conference (NCSEC-2002).
+    
+    L Devroye, P Morin. 2003. Cuckoo hashing: Further analysis. Information 
+    Processing Letters.
+    
+    
+    This Python interface is to CKHash 0.4.2:
+     * Copyright (C) 2005-2008 Thai Computational Linguistics Laboratory (TCL),
+     * National Institute of Information and Communications Technology (NICT)
+     * Written by Canasai Kruengkrai <canasaiREMOVETHIS@gmail.com>
+
+CLASSES
+    __builtin__.object
+        cuckoohash
+    
+    class cuckoohash(__builtin__.object)
+     |  cuckoohash() -> new empty Cuckoo Hash table
+     |  
+     |  cuckoohash(size=n) -> Create a new Cuckoo Hash table with 
+     |      initial size n. 
+     |      Note: the table will automatically grow as needed.
+     |  cuckoohash(seq=seq) -> Create a new Cuckoo Hash table as if via:
+     |      c = cuckoohash()
+     |      for k, v in seq: c[k] = v
+     |  
+     |  Methods defined here:
+     |  
+     |  __del__(...)
+     |  
+     |  __delitem__(...)
+     |      x.__delitem__(y) <==> del x[y]
+     |  
+     |  __getitem__(...)
+     |      x.__getitem__(y) <==> x[y]
+     |  
+     |  __init__(...)
+     |      x.__init__(...) initializes x; see x.__class__.__doc__ for signature
+     |  
+     |  __iter__(...)
+     |      x.__iter__() <==> iter(x)
+     |  
+     |  __len__(...)
+     |      x.__len__() <==> len(x)
+     |  
+     |  __setitem__(...)
+     |      x.__setitem__(i, y) <==> x[i]=y
+     |  
+     |  delete(...)
+     |      delete(key)
+     |      
+     |      delete the specified key
+     |  
+     |  get(...)
+     |      get(key)
+     |      
+     |      retriee the value for the specified key
+     |  
+     |  has_key(...)
+     |      has_key(key)
+     |      
+     |      a synonym for lookup(key)
+     |  
+     |  insert(...)
+     |      insert(key, val)
+     |      
+     |      insert the key:value pair into the hash table.
+     |      key - a string
+     |      val - any Python object
+     |  
+     |  items(...)
+     |      C.items() -> list of (key, value) pairs in C
+     |  
+     |  iteritems(...)
+     |      C.iteritems() -> iterate over the (key, value) items in C
+     |  
+     |  iterkeys(...)
+     |      C.iterkeys() -> iterate over the keys in C
+     |  
+     |  itervalues(...)
+     |      C.itervalues() -> iterate over the value in C
+     |  
+     |  keys(...)
+     |      keys() - the list of keys for the hash table
+     |  
+     |  lookup(...)
+     |      lookup(key)
+     |      
+     |      test to see if the key is present in the hash table
+     |  
+     |  values(...)
+     |      values() - the list of values held in the hash table
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __new__ = <built-in method __new__ of type object>
+     |      T.__new__(S, ...) -> a new object with type S, a subtype of T
+     |  
+     |  __pyx__vtable__ = <PyCObject object>
+
+DATA
+    __author__ = 'Jose Nazario <jose@monkey.org>'
+    __copyright__ = 'Copyright (c) 2008 Jose Nazario'
+    __license__ = 'GPL2'
+    __url__ = ''
+    __version__ = '1.0-0.4.2'
+
+VERSION
+    1.0-0.4.2
+
+AUTHOR
+    Jose Nazario <jose@monkey.org>
+
+

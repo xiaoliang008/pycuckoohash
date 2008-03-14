@@ -1,0 +1,18 @@
+requirements
+- cuckoo hashing library (ckhash-0.4.2)
+  http://www.tcllab.org/canasai/software/ckhash/ckhash-0.4.2/
+- python 2.3 or later
+- pyrex (to build the .c from the .pyx)
+
+note
+- this assumes that you have placed this code under the ckhash source tree
+  ie: ckhash-0.4.2/python/{setup.py, Makefile, cuckoo.pyx, ...}
+
+to build
+- run make in the current directory
+
+to instal
+- make install
+
+testing
+- see test.py for the unit tests
