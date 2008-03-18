@@ -32,7 +32,7 @@ This Python interface is to CKHash 0.4.2:
 __author__ = 'Jose Nazario <jose@monkey.org>'
 __copyright__ = 'Copyright (c) 2008 Jose Nazario'
 __license__ = 'GPL2'
-__url__ = ''
+__url__ = 'http://code.google.com/p/pycuckoohash/'
 __version__ = '1.0-0.4.2'
 
 cdef extern from "../cuckoo_hash/cuckoo_hash.h":

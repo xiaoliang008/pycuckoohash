@@ -14,6 +14,6 @@ setup(
         libraries = ["ckhash"],
         library_dirs = ["../cuckoo_hash"]
         ) ],
-    url = "http://monkey.org/~jose/software/pycuckoo/",
+    url = "http://code.google.com/p/pycuckoohash/",
 )
     
